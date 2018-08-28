@@ -1,7 +1,7 @@
 Grove current sensor ACS70331
 =================================  
 
-![MPR121](https://github.com/linux-downey/Grove_touch_sensor_MPR121/blob/master/MPR121_module.png)  
+![MPR121](https://github.com/Jenkinlu001/Grove_current_sensor_ACS70331/ACS70331_module.jpg)  
 
 
 Introduction of sensor
