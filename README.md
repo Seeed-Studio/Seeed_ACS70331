@@ -1,7 +1,7 @@
 Grove current sensor ACS70331
 =================================  
 
-![MPR121](https://github.com/Jenkinlu001/Grove_current_sensor_ACS70331/ACS70331_module.jpg)  
+![ACS70331](https://github.com/Jenkinlu001/Grove_current_sensor_ACS70331/ACS70331_module.jpg)  
 
 
 Introduction of sensor
