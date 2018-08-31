@@ -61,7 +61,7 @@ float sensitivity = 1000.0 / 800.0; //1000mA per 800mV
  ******************************************************************************/
 
 //float Vref = 244;
-float Vref = 265;
+float Vref = 265;  //Firstly,change this!!!
 
 void setup() 
 {
@@ -89,6 +89,11 @@ void loop()
   //          unitValue= 5.0 / 1024.0*1000 ;
   float unitValue= RefVal / 1024.0*1000 ;
   float voltage = unitValue * sensorValue; 
+  
+  //When no load,Vref=initialValue
+  SERIAL.print("initialValue: ");
+  SERIAL.print(voltage);
+  SERIAL.println("mV"); 
 
   // Calculate the corresponding current
   float current = (voltage - Vref) * sensitivity;
