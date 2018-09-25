@@ -64,7 +64,7 @@ float sensitivity = 1000.0 / 800.0; //1000mA per 800mV
  ******************************************************************************/
 
 //float Vref = 244;
-float Vref = 265;
+float Vref = 265;  //Firstly,change this!!!
 
 void setup() 
 {
@@ -106,10 +106,14 @@ void loop()
   
   //You need to read the value when there is no load and uncomment it
   SeeedOled.clearDisplay();
-  //SeeedOled.putNumber("initValue: ");
-  //SeeedOled.putNumber(voltage);
-  //SeeedOled.putString("mV ");
-  //SeeedOled.putNumber(sensorValue);
+  
+  ////When no load,Vref=initialValue
+  SERIAL.print("initialValue: ");
+  SERIAL.print(voltage);
+  SERIAL.println("mV"); 
+  SeeedOled.putNumber(voltage);    //initialValue
+  SeeedOled.putString("mV ");
+  SeeedOled.putNumber(sensorValue);
 
   // Calculate the corresponding current
   float current = (voltage - Vref) * sensitivity;
