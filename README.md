@@ -1,4 +1,4 @@
-Grove current sensor ACS70331
+Grove current sensor ACS70331  [![Build Status](https://travis-ci.com/Seeed-Studio/Seeed_ACS70331.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Seeed_ACS70331)
 =================================  
 
 ![ACS70331](https://user-images.githubusercontent.com/41441945/44913532-42900300-ad60-11e8-8e51-bf8a2f2ab357.jpg)  
