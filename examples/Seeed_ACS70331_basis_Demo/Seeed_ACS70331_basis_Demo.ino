@@ -28,15 +28,21 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     THE SOFTWARE.
 */
+#include <Wire.h>
+#include <SeeedOLED.h>
 
-
-#ifdef ARDUINO_SAMD_VARIANT_COMPLIANCE
+#ifdef SEEED_XIAO_M0
+    #define RefVal 5.0
+    #define SERIAL Serial
+#elif defined(ARDUINO_SAMD_VARIANT_COMPLIANCE)
     #define RefVal 3.3
     #define SERIAL SerialUSB
 #else
     #define RefVal 5.0
     #define SERIAL Serial
 #endif
+
+
 //An OLED Display is required here
 //use pin A0
 #define Pin A0

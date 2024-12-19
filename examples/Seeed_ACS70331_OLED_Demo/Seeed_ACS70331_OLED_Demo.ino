@@ -33,7 +33,10 @@
 #include <Wire.h>
 #include <SeeedOLED.h>
 
-#ifdef ARDUINO_SAMD_VARIANT_COMPLIANCE
+#ifdef SEEED_XIAO_M0
+    #define RefVal 5.0
+    #define SERIAL Serial
+#elif defined(ARDUINO_SAMD_VARIANT_COMPLIANCE)
     #define RefVal 3.3
     #define SERIAL SerialUSB
 #else
